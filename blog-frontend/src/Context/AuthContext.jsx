@@ -23,7 +23,7 @@ export const AuthContextProvider = ({ children }) => {
 
         try {
             const headers = { "Authorization": `Bearer ${sessionStorage.getItem("token")}` }
-            const res = await axios.post("http://localhost:5000/user/isLoggedIn", null, { headers })
+            const res = await axios.post("https://ints.onrender.com/user/isLoggedIn", null, { headers })
             setUser("user")
             // console.log(res);
             if (location.pathname === "/" || location.pathname === "/signup") {
@@ -53,7 +53,7 @@ export const AuthContextProvider = ({ children }) => {
         try {
 
             //console.log(userData);
-            const res = await axios.post("http://localhost:5000/user/login", userData)
+            const res = await axios.post("https://ints.onrender.com/user/login", userData)
             //console.log(res.data);
             setUser(res.data.user)
             sessionStorage.setItem("token", res.data.token)
@@ -66,7 +66,7 @@ export const AuthContextProvider = ({ children }) => {
     const signup = async (userData) => {
         //console.log(userData);
         try {
-            const res = await axios.post("http://localhost:5000/user/signup", userData)
+            const res = await axios.post("https://ints.onrender.com/user/signup", userData)
             // toast.success(res.data)
             //console.log(res.data);
             navigate("/")
