@@ -48,7 +48,7 @@ export default function Home() {
         <div>
             <Navbar></Navbar>
             <div className='postContainer'>
-                {loader && <h2 className='loading'>Loading.....</h2>}
+                {loader && <img src='https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif' alt='img'></img>}
                 {blog && blog.map((data) => {
                     return (
                         <div className='blog'>
