@@ -8,6 +8,7 @@ import Navbar from '../Components/Navbar'
 import AuthContext from '../Context/AuthContext'
 import { toast } from 'react-hot-toast'
 import { useNavigate } from 'react-router-dom'
+import Confetti from 'react-confetti'
 
 export default function Home() {
 
@@ -59,6 +60,8 @@ export default function Home() {
                         </div>
                     )
                 })}
+                
+                <Confetti width={width} height={height} recycle=false/>
             </div>
         </div>
     )
