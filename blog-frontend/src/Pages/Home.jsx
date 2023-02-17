@@ -61,7 +61,7 @@ export default function Home() {
                     )
                 })}
                 
-                <Confetti width={width} height={height} recycle=false/>
+                <Confetti numberOfPieces="300"/>
             </div>
         </div>
     )
