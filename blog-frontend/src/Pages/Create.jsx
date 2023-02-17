@@ -32,7 +32,7 @@ export default function Create() {
 
         try {
             //console.log(blog);
-            const res = await axios.post("http://localhost:5000/blog/create", blog)
+            const res = await axios.post("https://ints.onrender.com/blog/create", blog)
 
             toast.success(res.data)
 
