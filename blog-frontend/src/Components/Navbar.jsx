@@ -9,7 +9,7 @@ export default function Navbar() {
     const { toast } = useContext(ToastContext)
     const { setUser } = useContext(AuthContext)
     return (
-        <nav style={{ position: "sticky", top: "0", display: "flex", alignItems: "center", justifyContent: "space-between", backgroundColor: "yellowgreen", padding: "2vh 2vw" }}>
+        <nav style={{ position: "sticky", top: "0", display: "flex", alignItems: "center", justifyContent: "space-between",  backgroundColor: "RGB(193 53 132)", padding: "2vh 2vw" }}>
             <ul>
                 <li>
                     <h2 style={{ fontSize: "30px" }}>BlogApp</h2>
