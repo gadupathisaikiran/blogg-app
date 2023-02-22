@@ -62,7 +62,7 @@ export default function Home() {
                 })}
                 
                            {
-  blog &&  <Confetti numberOfPieces={1000} height="1000px" recycle={false}/>
+  blog &&  <Confetti numberOfPieces={400} height="1000px" recycle={false}/>
 
                 }
             </div>
